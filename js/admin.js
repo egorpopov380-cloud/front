@@ -86,7 +86,7 @@ function constructModal() {
     return overlayContainer;
 }
 
-const API = 'http://localhost:3000'
+const API = 'srv-d82q18vaqgkc739d8fq0'
 
 // Инициализация после загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {
