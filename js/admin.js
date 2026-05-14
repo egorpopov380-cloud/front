@@ -86,7 +86,7 @@ function constructModal() {
     return overlayContainer;
 }
 
-const API = 'srv-d82q18vaqgkc739d8fq0'
+const API = 'https://kval.onrender.com'
 
 // Инициализация после загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {
