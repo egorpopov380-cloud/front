@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корочки.есть | Запись на курсы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===== ОСНОВНОЙ КОНТЕНТ ПОСЛЕ ВХОДА ===== -->
+<div id="mainAppContent">
+    <!-- Мои заявки -->
+    <div class="form-card">
+        <h2><i class="fas fa-list"></i> Мои заявки</h2>
+        <div class="table-block">
+            <table class="data-grid" id="myTicketsTable">
+                <thead>
+                <tr><th>Курс</th><th>Дата начала</th><th>Оплата</th><th>Статус</th><th>Дата подачи</th><th>Отзыв</th></tr>
+                </thead>
+                <tbody id="myTicketsBody">
+                <tr><td colspan="6">Нет заявок</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <a type="submit" class="btn-primary" href="zayavka.html">Отправить заявку</a>
+    </div>
+    <!-- Отзывы -->
+    <div class="form-card">
+        <h2><i class="fas fa-star"></i>Оставить отзыв</h2>
+        <div class="form-row">
+            <div class="input-group">
+                <label>Выберите курс</label>
+                <select id="otzyvKursId">
+                    <option value="">-- выберите заявку --</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-group">
+                <label>Ваш отзыв</label>
+                <textarea id="otzyvText" rows="3" placeholder="Поделитесь впечатлениями..."></textarea>
+            </div>
+        </div>
+        <button id="sendOtzyvBtn" class="btn-primary" onclick="submitNewReview()">Отправить отзыв</button>
+    </div>
+</div>
+<script src="js/content.js"></script>
+</body>
+</html>
