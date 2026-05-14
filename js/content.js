@@ -1,5 +1,5 @@
 let userRequestsData = {}
-const API = 'http://localhost:3000'
+const API = 'https://kval.onrender.com'
 
 async function fetchUserRequests() {
     try {
